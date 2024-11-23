@@ -15,36 +15,39 @@
     </linearGradient>
   </defs>
 
-  <!-- Groupe des flocons -->
+  <!-- Flocon complexe -->
   <g>
-    <!-- Flocon complexe 1 -->
-    <g transform="translate(100, -20)">
-      <path d="M10 0 L13 8 L22 8 L15 13 L18 22 L10 17 L2 22 L5 13 L-2 8 L7 8 Z" fill="white" />
-      <animateTransform attributeName="transform" type="translate" from="100,-20" to="100,220" dur="5s" repeatCount="indefinite" />
-    </g>
+    <!-- Centre -->
+    <circle cx="400" cy="100" r="5" fill="white" />
 
-    <!-- Flocon complexe 2 -->
-    <g transform="translate(200, -50)">
-      <path d="M10 0 L12 6 L18 6 L14 10 L16 16 L10 12 L4 16 L6 10 L2 6 L8 6 Z" fill="white" />
-      <animateTransform attributeName="transform" type="translate" from="200,-50" to="200,220" dur="7s" repeatCount="indefinite" />
-    </g>
-
-    <!-- Flocon complexe 3 -->
-    <g transform="translate(300, -30)">
-      <path d="M8 0 L10 4 L14 4 L11 8 L13 12 L8 10 L3 12 L5 8 L2 4 L6 4 Z" fill="white" />
-      <animateTransform attributeName="transform" type="translate" from="300,-30" to="300,220" dur="6s" repeatCount="indefinite" />
-    </g>
-
-    <!-- Flocon complexe 4 -->
-    <g transform="translate(400, -70)">
-      <path d="M12 0 L14 5 L20 5 L16 9 L18 14 L12 11 L6 14 L8 9 L4 5 L10 5 Z" fill="white" />
-      <animateTransform attributeName="transform" type="translate" from="400,-70" to="400,220" dur="4.5s" repeatCount="indefinite" />
-    </g>
-
-    <!-- Flocon complexe 5 -->
-    <g transform="translate(600, -10)">
-      <path d="M10 0 L12 6 L16 6 L13 10 L15 14 L10 12 L5 14 L7 10 L4 6 L8 6 Z" fill="white" />
-      <animateTransform attributeName="transform" type="translate" from="600,-10" to="600,220" dur="5.5s" repeatCount="indefinite" />
-    </g>
+    <!-- Branche 1 -->
+    <path d="M400 100 L400 40 L405 50 L400 60 L395 50 Z" fill="white" />
+    <path d="M400 50 L402 55 L400 60 L398 55 Z" fill="white" />
+    <path d="M400 60 L403 65 L400 70 L397 65 Z" fill="white" />
+    
+    <!-- Branche 2 -->
+    <path d="M400 100 L460 100 L450 105 L440 100 L450 95 Z" fill="white" />
+    <path d="M450 100 L445 102 L440 100 L445 98 Z" fill="white" />
+    <path d="M440 100 L435 102 L430 100 L435 98 Z" fill="white" />
+    
+    <!-- Branche 3 -->
+    <path d="M400 100 L340 100 L350 95 L360 100 L350 105 Z" fill="white" />
+    <path d="M350 100 L355 102 L360 100 L355 98 Z" fill="white" />
+    <path d="M360 100 L365 102 L370 100 L365 98 Z" fill="white" />
+    
+    <!-- Branche 4 -->
+    <path d="M400 100 L400 160 L395 150 L400 140 L405 150 Z" fill="white" />
+    <path d="M400 150 L398 145 L400 140 L402 145 Z" fill="white" />
+    <path d="M400 140 L397 135 L400 130 L403 135 Z" fill="white" />
+    
+    <!-- Branches diagonales -->
+    <path d="M400 100 L440 60 L435 70 L430 60 L435 50 Z" fill="white" />
+    <path d="M440 60 L437 65 L430 60 L437 55 Z" fill="white" />
+    <path d="M400 100 L360 60 L365 70 L370 60 L365 50 Z" fill="white" />
+    <path d="M360 60 L363 65 L370 60 L363 55 Z" fill="white" />
+    <path d="M400 100 L360 140 L365 130 L370 140 L365 150 Z" fill="white" />
+    <path d="M360 140 L363 135 L370 140 L363 145 Z" fill="white" />
+    <path d="M400 100 L440 140 L435 130 L430 140 L435 150 Z" fill="white" />
+    <path d="M440 140 L437 135 L430 140 L437 145 Z" fill="white" />
   </g>
 </svg>
