@@ -1,37 +1,50 @@
-<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg" style="background:#121212">
-  <!-- Background -->
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg" style="background:#121212;">
+  <!-- Fond -->
   <rect width="100%" height="100%" fill="#121212" />
-  
-  <!-- Text -->
+
+  <!-- Texte -->
   <text x="50%" y="50%" text-anchor="middle" fill="url(#gradient)" font-family="Arial, sans-serif" font-size="64" font-weight="bold">
     Sentinel
   </text>
-  
-  <!-- Gradient for Text -->
+
+  <!-- Dégradé pour le texte -->
   <defs>
     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="magenta" />
       <stop offset="100%" stop-color="red" />
     </linearGradient>
   </defs>
-  
-  <!-- Snowflakes -->
+
+  <!-- Groupe des flocons -->
   <g>
-    <!-- Repeat snowflake shapes and animate -->
-    <circle cx="10%" cy="5%" r="5" fill="white">
-      <animate attributeName="cy" from="5%" to="105%" dur="5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="30%" cy="0%" r="5" fill="white">
-      <animate attributeName="cy" from="0%" to="105%" dur="6s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="50%" cy="-5%" r="5" fill="white">
-      <animate attributeName="cy" from="-5%" to="105%" dur="4s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="70%" cy="-10%" r="5" fill="white">
-      <animate attributeName="cy" from="-10%" to="105%" dur="5.5s" repeatCount="indefinite" />
-    </circle>
-    <circle cx="90%" cy="0%" r="5" fill="white">
-      <animate attributeName="cy" from="0%" to="105%" dur="7s" repeatCount="indefinite" />
-    </circle>
+    <!-- Flocon complexe 1 -->
+    <g transform="translate(100, -20)">
+      <path d="M10 0 L13 8 L22 8 L15 13 L18 22 L10 17 L2 22 L5 13 L-2 8 L7 8 Z" fill="white" />
+      <animateTransform attributeName="transform" type="translate" from="100,-20" to="100,220" dur="5s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Flocon complexe 2 -->
+    <g transform="translate(200, -50)">
+      <path d="M10 0 L12 6 L18 6 L14 10 L16 16 L10 12 L4 16 L6 10 L2 6 L8 6 Z" fill="white" />
+      <animateTransform attributeName="transform" type="translate" from="200,-50" to="200,220" dur="7s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Flocon complexe 3 -->
+    <g transform="translate(300, -30)">
+      <path d="M8 0 L10 4 L14 4 L11 8 L13 12 L8 10 L3 12 L5 8 L2 4 L6 4 Z" fill="white" />
+      <animateTransform attributeName="transform" type="translate" from="300,-30" to="300,220" dur="6s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Flocon complexe 4 -->
+    <g transform="translate(400, -70)">
+      <path d="M12 0 L14 5 L20 5 L16 9 L18 14 L12 11 L6 14 L8 9 L4 5 L10 5 Z" fill="white" />
+      <animateTransform attributeName="transform" type="translate" from="400,-70" to="400,220" dur="4.5s" repeatCount="indefinite" />
+    </g>
+
+    <!-- Flocon complexe 5 -->
+    <g transform="translate(600, -10)">
+      <path d="M10 0 L12 6 L16 6 L13 10 L15 14 L10 12 L5 14 L7 10 L4 6 L8 6 Z" fill="white" />
+      <animateTransform attributeName="transform" type="translate" from="600,-10" to="600,220" dur="5.5s" repeatCount="indefinite" />
+    </g>
   </g>
 </svg>
